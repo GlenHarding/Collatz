@@ -4,7 +4,7 @@ This application with test the Collatz Conjecture, testing integers from 1 thoug
 
 ## Pre-requisites
 
-To build this application you will require the .NET SDK.
+To build this application you will require the .NET 6 SDK.
 
 ## Building
 
@@ -12,7 +12,7 @@ To build for your machine runtime:
 
 - `dotnet build --configuration release`
 
-If you want to package the application so it doesn't need the .NET runtime installed on the target machine:
+If you want to package the application so it doesn't need the .NET 6 runtime installed on the target machine:
 
 - `dotnet publish --configuration release`
 
