@@ -41,8 +41,8 @@ e.g. `./Collatz 100000000` or `./Collatz 100 p s`
 
 ### Optional Arguments
 
-'nc' = Don't calculate chain lengths (much faster!).
+'fc' = Calculate full chain length for each number (i.e. don't use 'chain of chains' method - slower).
 
 'p' = Print progress of calculation (will slow the calculation significantly).
 
-'s' = Single threaded (slower but can produce sequential output with the 'p' option).
+'s' = Single threaded (for testing - slower but will produce sequential output with the 'p' option).
