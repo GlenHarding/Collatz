@@ -89,17 +89,24 @@ Optional Arguments:
                         Console.WriteLine("Argument 's' specified. Running on a single thread!\n");
                         result = SingleThread.Process(maxNumber, print);
                     }
+                    testWatch.Stop();
+                    Console.WriteLine($"Numbers 1 through {maxNumber} tested successfully.\nExecution Time: {testWatch.ElapsedMilliseconds} ms.\n");
                 }
                 else
                 {
                     var chainLengths = new int[2, maxNumber]; //Array to store chain of chain data.
                     MultiThreadChainOfChains.Process(maxNumber, chainLengths, print);
+                    testWatch.Stop();
+                    Console.WriteLine($"Numbers 1 through {maxNumber} tested successfully.\nExecution Time: {testWatch.ElapsedMilliseconds} ms.\n");
+
+                    var chainWatch = new System.Diagnostics.Stopwatch();
+                    chainWatch.Start();
+                    Console.WriteLine($"Calculating chain lengths....");
                     result = CountProcessing.GetLongest(maxNumber, chainLengths, print);
+                    chainWatch.Stop();
+                    Console.WriteLine($"Complete. Execution Time: {chainWatch.ElapsedMilliseconds} ms.\n");
                 }
 
-                testWatch.Stop();
-
-                Console.WriteLine($"Numbers 1 through {maxNumber} tested successfully.\nExecution Time: {testWatch.ElapsedMilliseconds} ms.\n");
                 Console.WriteLine($"The number with the longest chain is {result.Item1}.\nThe longest chain (including the starting number, to reach the first 4) is {result.Item2 + 1}.\n");
     
                 watchTotal.Stop();

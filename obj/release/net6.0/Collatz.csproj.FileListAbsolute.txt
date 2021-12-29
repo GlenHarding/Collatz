@@ -13,33 +13,3 @@
 /Users/GlenHarding/Repos/Collatz/obj/release/net6.0/ref/Collatz.dll
 /Users/GlenHarding/Repos/Collatz/obj/release/net6.0/Collatz.pdb
 /Users/GlenHarding/Repos/Collatz/obj/release/net6.0/Collatz.genruntimeconfig.cache
-/Users/GlenHarding/Repos/Collatz Simple/bin/release/net6.0/Collatz
-/Users/GlenHarding/Repos/Collatz Simple/bin/release/net6.0/Collatz.deps.json
-/Users/GlenHarding/Repos/Collatz Simple/bin/release/net6.0/Collatz.runtimeconfig.json
-/Users/GlenHarding/Repos/Collatz Simple/bin/release/net6.0/Collatz.dll
-/Users/GlenHarding/Repos/Collatz Simple/bin/release/net6.0/ref/Collatz.dll
-/Users/GlenHarding/Repos/Collatz Simple/bin/release/net6.0/Collatz.pdb
-/Users/GlenHarding/Repos/Collatz Simple/obj/release/net6.0/Collatz.csproj.AssemblyReference.cache
-/Users/GlenHarding/Repos/Collatz Simple/obj/release/net6.0/Collatz.GeneratedMSBuildEditorConfig.editorconfig
-/Users/GlenHarding/Repos/Collatz Simple/obj/release/net6.0/Collatz.AssemblyInfoInputs.cache
-/Users/GlenHarding/Repos/Collatz Simple/obj/release/net6.0/Collatz.AssemblyInfo.cs
-/Users/GlenHarding/Repos/Collatz Simple/obj/release/net6.0/Collatz.csproj.CoreCompileInputs.cache
-/Users/GlenHarding/Repos/Collatz Simple/obj/release/net6.0/Collatz.dll
-/Users/GlenHarding/Repos/Collatz Simple/obj/release/net6.0/ref/Collatz.dll
-/Users/GlenHarding/Repos/Collatz Simple/obj/release/net6.0/Collatz.pdb
-/Users/GlenHarding/Repos/Collatz Simple/obj/release/net6.0/Collatz.genruntimeconfig.cache
-/Users/GlenHarding/Repos/Collatz Simple with Chain/bin/release/net6.0/Collatz
-/Users/GlenHarding/Repos/Collatz Simple with Chain/bin/release/net6.0/Collatz.deps.json
-/Users/GlenHarding/Repos/Collatz Simple with Chain/bin/release/net6.0/Collatz.runtimeconfig.json
-/Users/GlenHarding/Repos/Collatz Simple with Chain/bin/release/net6.0/Collatz.dll
-/Users/GlenHarding/Repos/Collatz Simple with Chain/bin/release/net6.0/ref/Collatz.dll
-/Users/GlenHarding/Repos/Collatz Simple with Chain/bin/release/net6.0/Collatz.pdb
-/Users/GlenHarding/Repos/Collatz Simple with Chain/obj/release/net6.0/Collatz.csproj.AssemblyReference.cache
-/Users/GlenHarding/Repos/Collatz Simple with Chain/obj/release/net6.0/Collatz.GeneratedMSBuildEditorConfig.editorconfig
-/Users/GlenHarding/Repos/Collatz Simple with Chain/obj/release/net6.0/Collatz.AssemblyInfoInputs.cache
-/Users/GlenHarding/Repos/Collatz Simple with Chain/obj/release/net6.0/Collatz.AssemblyInfo.cs
-/Users/GlenHarding/Repos/Collatz Simple with Chain/obj/release/net6.0/Collatz.csproj.CoreCompileInputs.cache
-/Users/GlenHarding/Repos/Collatz Simple with Chain/obj/release/net6.0/Collatz.dll
-/Users/GlenHarding/Repos/Collatz Simple with Chain/obj/release/net6.0/ref/Collatz.dll
-/Users/GlenHarding/Repos/Collatz Simple with Chain/obj/release/net6.0/Collatz.pdb
-/Users/GlenHarding/Repos/Collatz Simple with Chain/obj/release/net6.0/Collatz.genruntimeconfig.cache
