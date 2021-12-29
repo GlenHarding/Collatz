@@ -69,8 +69,6 @@ Optional Arguments:
                     return;
                 }
 
-                var chainLengths = new int[2, maxNumber]; //Array to store chain of chain data. Pre allocated for speed.
-
                 // Start calculation. Keeping everything inline for faster performace.
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"\nStarting test of Collatz Conjecture for numbers 1 through {maxNumber}...\n");
@@ -94,6 +92,7 @@ Optional Arguments:
                 }
                 else
                 {
+                    var chainLengths = new int[2, maxNumber]; //Array to store chain of chain data.
                     MultiThreadChainOfChains.Process(maxNumber, chainLengths, print);
                     result = CountProcessing.GetLongest(maxNumber, chainLengths, print);
                 }
