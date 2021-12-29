@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "JyVoMGsXu2qIZvbjZm48zB3gxUlfCKfxvn1GWCGF6yzd/2hdMVgKGOdY38TPZpWTxUz9/00b0Vvyh8I3jR5wjw==",
+  "dgSpecHash": "7D4KWO0GpYAI+jQfXzZNhC6gKrueIrh/EiF6N+9zrgLEr+JkZX7u2f+/pJ0Dg8hDXsYJhIYTl1E0MT7RH9o0qg==",
   "success": true,
   "projectFilePath": "/Users/GlenHarding/Repos/Collatz/Collatz.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/GlenHarding/.nuget/packages/microsoft.netcore.app.runtime.linux-arm64/6.0.0/microsoft.netcore.app.runtime.linux-arm64.6.0.0.nupkg.sha512",
+    "/Users/GlenHarding/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-arm64/6.0.0/microsoft.aspnetcore.app.runtime.linux-arm64.6.0.0.nupkg.sha512",
+    "/Users/GlenHarding/.nuget/packages/microsoft.netcore.app.host.linux-arm64/6.0.0/microsoft.netcore.app.host.linux-arm64.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

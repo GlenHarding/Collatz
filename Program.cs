@@ -20,27 +20,30 @@
                 {
                     Console.WriteLine(@"No input parameters were received.\n Please provide a maximum number to test.
 Optional Arguments:
-'nc' = Don't calculate chain lengths (much faster!).
+'fc' = Calculate full chain length for each number (slower).
 'p' = Print progress of calculation (will slow the calculation significantly).
-'s' = Single threaded (slower but will produce sequential output with the 'p' option).");
+'s' = Single threaded (for testing - slower but will produce sequential output with the 'p' option).");
                     Console.ResetColor();
                     return;
                 }
 
                 // setup vars
-                bool calculateChain = true;
-                bool parallel = true;
+                bool fullChain = false;
+                bool singleThread = false;
                 bool print = false;
                 int maxNumber;
                 var result = new Tuple <int, int>(0, 0);
-                            
+
                 // Parse intput args
-                if (args.Contains("nc"))
-                    calculateChain = false;
-                if (args.Contains("s"))
-                    parallel = false;
+                if (args.Contains("fc"))
+                    fullChain = true;
                 if (args.Contains("p"))
                     print = true;
+                if (args.Contains("s"))
+                {
+                    singleThread = true;
+                    fullChain = true;
+                }
 
                 if (args.Length != 1 && args.Length != 2 && args.Length != 3 && args.Length != 4) 
                 {
@@ -66,6 +69,8 @@ Optional Arguments:
                     return;
                 }
 
+                var chainLengths = new int[2, maxNumber]; //Array to store chain of chain data. Pre allocated for speed.
+
                 // Start calculation. Keeping everything inline for faster performace.
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"\nStarting test of Collatz Conjecture for numbers 1 through {maxNumber}...\n");
@@ -74,9 +79,9 @@ Optional Arguments:
 
                 testWatch.Start();
 
-                if(calculateChain)
+                if(fullChain)
                 {
-                    if(parallel)
+                    if(!singleThread)
                     {
                         result = MultiThread.Process(maxNumber, print);
                     }
@@ -88,13 +93,15 @@ Optional Arguments:
                     }
                 }
                 else
-                    MultiThreadNoChain.Process(maxNumber);
+                {
+                    MultiThreadChainOfChains.Process(maxNumber, chainLengths, print);
+                    result = CountProcessing.GetLongest(maxNumber, chainLengths, print);
+                }
 
                 testWatch.Stop();
 
                 Console.WriteLine($"Numbers 1 through {maxNumber} tested successfully.\nExecution Time: {testWatch.ElapsedMilliseconds} ms.\n");
-                if(calculateChain)
-                    Console.WriteLine($"The number with the longest chain is {result.Item1}.\nThe longest chain (including the starting number, to reach the first 4) is {result.Item2 + 1}.\n");
+                Console.WriteLine($"The number with the longest chain is {result.Item1}.\nThe longest chain (including the starting number, to reach the first 4) is {result.Item2 + 1}.\n");
     
                 watchTotal.Stop();
                 Console.ForegroundColor = ConsoleColor.Magenta;
