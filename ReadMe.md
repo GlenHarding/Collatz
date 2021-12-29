@@ -41,7 +41,7 @@ e.g. `./Collatz 100000000` or `./Collatz 100 p s`
 
 ### Optional Arguments
 
-'fc' = Calculate full chain length for each number (i.e. don't use 'chain of chains' method - slower).
+'fc' = Calculate full chain length for each number (slower; i.e. don't use 'chain of chains' method).
 
 'p' = Print progress of calculation (will slow the calculation significantly).
 

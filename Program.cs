@@ -20,7 +20,7 @@
                 {
                     Console.WriteLine(@"No input parameters were received.\n Please provide a maximum number to test.
 Optional Arguments:
-'fc' = Calculate full chain length for each number (i.e. don't use 'chain of chains' method - slower).
+'fc' = Calculate full chain length for each number (slower; i.e. don't use 'chain of chains' method)
 'p' = Print progress of calculation (will slow the calculation significantly).
 's' = Single threaded (for testing - slower but will produce sequential output with the 'p' option).");
                     Console.ResetColor();
