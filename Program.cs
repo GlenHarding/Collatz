@@ -69,7 +69,7 @@ Optional Arguments:
                     return;
                 }
 
-                // Start calculation. Keeping everything inline for faster performace.
+                // Start calculation....
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"\nStarting test of Collatz Conjecture for numbers 1 through {maxNumber}...\n");
                 
