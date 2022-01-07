@@ -10,6 +10,8 @@ To build this application you will require the .NET 6 SDK.
 
 To build for your machine runtime:
 
+**A pre-built version for Linux ARM64 (e.g. EC2 m6g) is in https://github.com/GlenHarding/Collatz/tree/main/bin/Release/net6.0/linux-arm64)**
+
 - `dotnet build --configuration release`
 
 If you want to package the application so it doesn't need the .NET 6 runtime installed on the target machine:
